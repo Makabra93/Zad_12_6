@@ -1,6 +1,62 @@
+@import url('https://fonts.googleapis.com/css?family=Righteous');
+
 * {
   text-align: center;
   font-size: 30px;
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
+  font-family: Righteous;
+  background-color: rgb(102, 22, 22);
+}
+h1 {
+  margin: 30px;
+  font-size: 50px;
+  text-transform: uppercase;
+}
+button {
+  font-size: 28px;
+  background-color: rgba(0, 0, 0, 0);
+  width: 300px;
+  height: 50px;
+  text-decoration: none;
+  padding: 6px;
+  border: 1px solid;
+  cursor: default;
+}
+input {
+  font-size: 28px;
+  background-color: rgba(0, 0, 0, 0);
+  width: 300px;
+  height: 50px;
+  text-decoration: none;
+  padding: 6px;
+  border: 1px solid;
+  cursor: default;
+}
+button:focus,
+input:focus {
+  outline:0;
+}
+button:hover {
+  background-color: #000;
+  color: rgb(102, 22, 22);
+}
+button:active {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+h2{
+  margin: 30px 0;
+  font-size: 35px;
+  text-transform: uppercase;
+  border-bottom: 1px solid;
+  padding-bottom: 20px;
+}
+ul {
+  list-style-type: square;
+}
+li {
+  margin: 0 auto;
+  text-align: left;
+  max-width: 580px;
 }
