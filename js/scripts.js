@@ -2,18 +2,10 @@ $(function() {
     var url = 'https://restcountries.eu/rest/v1/name/';
     var countriesList = $('#countries');
 
-    $("#country-name").focus(function() {
-        $(this).data("hasfocus", true);
+    $( "#form-search" ).submit(function( event ) {
+        searchCountries();
+        event.preventDefault();
     });
-    $("#country-name").blur(function() {
-        $(this).data("hasfocus", false);
-    });
-    $(document.body).keyup(function(ev) {
-        if (ev.which === 13 && $("#country-name").data("hasfocus")) {
-            searchCountries();
-        }
-    });
-    $('#search').click(searchCountries);
 
     function searchCountries() {
         var countryName = $('#country-name').val();
